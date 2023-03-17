@@ -8,9 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        
-    </div>
-   <script src="script.js"></script> 
-</body>
+    <section class="container">
+        <h1> Todo list with JavaScript</h1>
+        <section class="second-container">
+            <div class="add-todo">
+                <input id="todo-input"placeholder="Enter what to do">
+                <button onclick="onAddTodo()">Add New</button>
+            </div>
+            <ul id="todo-list">
+                <li id="item-1">
+                    what I want to do
+                    <img onclick="onDeleteTodo('item-1')" src="./delete.png" alt="">
+                </li>
+                <li id="item-2">
+                    what I want to do
+                    <img onclick="onDeleteTodo('item-2')" src="./delete.png" alt="">
+                </li>
+                <li id="item-3">
+                    what I want to do
+                    <img onclick="onDeleteTodo('item-3')" src="./delete.png" alt="">
+                </li>
+            </ul>
+        </section>
+    </section>
+    <script src="script.js"></script>
+    </body>
 </html>
